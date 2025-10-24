@@ -2,7 +2,7 @@ name: 同步上游 Worker 代码 (Zip 解压版)
 
 on:
   schedule:
-    - cron: '0 0 * * *'   # 每天00:00 UTC运行一次
+    - cron: '0 2 * * 1'   # 每周一02:00 UTC运行一次
   workflow_dispatch:      # 允许手动触发
 
 jobs:
